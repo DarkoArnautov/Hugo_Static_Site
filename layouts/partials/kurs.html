@@ -1,0 +1,37 @@
+<div class="section" id="kurs">
+    <div class="container">
+    {{ range .Data.Pages }}
+        {{if eq .Title "kurs" }}
+        <div class="section-header-other">{{ .Params.sectionheader }}</div>
+        <div class="short-border"></div>
+        {{ range .Params.kursitem }}
+        <div class="row">
+            <div class="kurs-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="section-header">{{ .cardheader }}</div>
+                        <p>{{ .carddescription }}</p>
+                        <p>{{ .carddate | safeHTML }}</p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <img src="{{ .image }}">
+                        <p class="description">
+                            {{ .description }}
+                        </p>
+                    </div>
+                </div>
+            	<div class="row" style="padding-top: 0px">
+                    <div class="col-md-6">
+            			<div class="row bottom-buttons">
+    	        			<div class="col-sm button1">{{ .cardbutton1 }}</div>
+    	        			<div class="col-sm button2">{{ .cardbutton2 }}</div>
+    	        		</div>
+                    </div>
+            	</div>
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    {{ end }}
+    </div>
+</div>

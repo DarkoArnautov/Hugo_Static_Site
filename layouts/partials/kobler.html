@@ -1,0 +1,11 @@
+<div class="section" id="kobler">
+    <div class="container">
+    {{ range .Data.Pages }}
+        {{if eq .Title "kobler" }}
+        <div class="section-header">{{ .Params.sectionheader | safeHTML }}</div>
+        <p class="sub-header">{{ .Params.description1}}</p>
+        <p class="sub-header">{{ .Params.description2}}</p>
+        {{ end }}
+    {{ end }}
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="section" id="data-analyse">
+    <div class="container">
+    {{ range .Data.Pages }}
+        {{if eq .Title "data-analyse" }}
+        <div class="section-header-other">{{ .Params.sectionheader}}</div>
+        <div class="short-border"></div>
+        <div class="row">
+            {{ range .Params.dataitem }}
+    		<div class="col-md">
+    			<p class="data-item" style="{{.style | safeCSS}}">{{ .name }}</p>
+    		</div>
+            {{ end }}
+        </div>
+        <p class="sub-header">{{ .Params.subheader }}</p>
+        <div class="row">
+        	<div class="col-md">{{ .Params.description1 }}</div>
+        	<div class="col-md">{{ .Params.description2 }}</div>
+        </div>
+        {{end}}
+    {{end}}
+    </div>
+</div>

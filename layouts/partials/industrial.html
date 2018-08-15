@@ -1,0 +1,11 @@
+<div class="section" id="industrial">
+    <div class="container">
+    {{ range .Data.Pages }}
+        {{if eq .Title "industrial" }}
+        <div class="section-header-other">{{ .Params.sectionheader }}</div>
+        <p class="sub-header">{{ .Params.description1 }}</p>
+        <p class="sub-header">{{ .Params.description2 }}</p>
+    	{{ end }}
+    {{ end }}
+    </div>
+</div>

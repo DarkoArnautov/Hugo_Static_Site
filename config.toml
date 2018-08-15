@@ -1,0 +1,39 @@
+baseurl                 = "/"   # Your domain name. Must end with "/"
+languageCode            = "en-us"
+title                   = "MindShift"
+enforce_ssl             = false
+builddrafts             = false                             # Include pages with draft status of true
+canonifyurls            = true                              # Turns relative urls into absolute urls
+# disqusshortname       = "xxx"                             # Enable Disqus for comments
+# googleAnalytics       = "xxx"
+
+[params]    
+    blogHead            = "Blog"                            # Full name shows on blog post pages
+    description         = "Website Description"             # Max 160 characters show in search results
+    faviconFile         = "img/fav.ico"
+    showBlog            = true                              # Show Blog section on home page
+    showAllPosts        = false                             # Set 'true' to list all posts on home page 
+    showLatest          = true                              # Show latest blog post summary
+    shareButtons        = true                              # On post pages, show share this social buttons
+
+    # Share buttons
+    shareTwitter        = true
+    shareFacebook       = true
+    sharePinterest      = false
+    shareGooglePlus     = true
+
+# Social icons appear in introduction and contact section. Add as many more as you like.
+# Find icon names here: http://fontawesome.io/cheatsheet/
+
+[[params.social]]
+    url = "https://www.linkedin.com/company/mindshift-as/"
+    icon = "linkedin-square"
+
+[[params.social]]
+    url = "https://www.facebook.com/mindshiftoslo/"
+    icon = "facebook-square"
+
+[[params.social]]
+    url = "https://www.instagram.com/mindshiftoslo/"
+    icon = "instagram"
+

@@ -1,0 +1,13 @@
+<div class="section" id="vare">
+    <div class="container">
+    {{ range .Data.Pages }}
+        {{if eq .Title "vare" }}
+        <div class="section-header-other">Våre samarbeidspartnere</div>
+        <div class="short-border"></div>
+        <div class="row">
+            {{ .Content }}
+        </div>
+        {{ end }}
+    {{ end }}
+    </div>
+</div>

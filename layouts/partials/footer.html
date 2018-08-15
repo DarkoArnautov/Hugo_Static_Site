@@ -1,0 +1,9 @@
+<div class="section" id="footer"><!-- Begin Footer section -->
+    <div class="container "><!-- Begin Footer container -->
+		    {{ range .Site.Params.social }}
+		    <a href="{{ .url }}">
+		        <i class="fa fa-{{ .icon}}"></i>
+		    </a>
+		    {{ end }}
+    </div><!-- End Footer container -->
+</div><!-- End Footer section -->

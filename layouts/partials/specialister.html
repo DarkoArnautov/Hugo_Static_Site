@@ -1,0 +1,21 @@
+<div class="specialister" id="specialister">
+    <div class="container">
+    {{ range .Data.Pages }}
+        {{if eq .Title "specialister" }}
+        <div class="section-header">{{.Params.sectionheader}}</div>
+        <div class="border"></div>
+        <div class="sub-header">{{.Params.subheader}}</div>
+        <div class="row">
+            {{ range .Params.specialitem }}    
+    		<div class="col-md special-item">
+    			<a href="{{ .link}}">
+                    <img src="{{.icon}}" />
+                    <p>{{.name}}</p>
+                </a>
+    		</div>
+            {{end}}
+        </div>
+        {{end}}
+    {{ end }}
+    </div>
+</div>
